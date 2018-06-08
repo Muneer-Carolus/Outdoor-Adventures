@@ -1,0 +1,293 @@
+// layout for website
+.container{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  border:10px solid black;
+  .top{
+    margin-top: 0;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    .navbar{
+      grid-column: 1/5;
+      grid-row: 1/1;
+    }
+    .heading{
+      grid-column: 1/5;
+      grid-row: 2/2;
+    }
+    .act{
+      grid-column: 1/4;
+      grid-row: 3/3;
+      display: grid;
+      grid-template-columns: repeat(4,1f);
+      grid-template-rows: auto;
+      height: 80vh;
+      grid-gap: 20px;
+      .camping{
+        grid-column: 1/1;
+        grid-row: 1/1;
+      }
+      .fishing{
+        grid-column: 2/2;
+        grid-row: 1/1;
+      }
+      .hiking{
+        grid-column: 3/3;
+        grid-row: 1/1;
+      }
+      .rock{
+        grid-column: 4/4;
+        grid-row: 1/1;
+      }
+      .sidebar{
+        grid-column: 5/5;
+        grid-row: 1/1;
+      }
+    }
+  }
+
+
+ .info{
+  grid-column: 1/4;
+  grid-row: 4/4;
+  display: grid;
+  grid-template-columns: repeat(3,1f);
+  grid-template-rows: repeat(1,1fr);
+  grid-gap: 10px;
+  .about_camping{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    .heading2{
+      grid-column: 1/4;
+      grid-row: 1/1;
+    }
+    .camp_site1{
+      grid-column: 1/1;
+      grid-row: 2/2;
+    }
+    .camp_site2{
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+    .camp_site3{
+      grid-column: 3/3;
+      grid-row: 2/2;
+    }
+  }
+  .about_fishing{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    .heading3{
+      grid-column: 1/4;
+      grid-row: 1/1;  
+    }
+    .fish_site1{
+      grid-column: 1/1;
+      grid-row: 2/2;
+    }
+    .fish_site2{
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+    .fish_site3{
+      grid-column: 3/3;
+      grid-row: 2/2;
+    }
+  }
+  .about_hiking{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    .heading4{
+      grid-column: 1/4;
+      grid-row: 1/1;  
+    }
+    .hike_site1{
+      grid-column: 1/1;
+      grid-row: 2/2;
+    }
+    .hike_site2{
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+    .hike_site3{
+      grid-column: 3/3;
+      grid-row: 2/2;
+    }
+  }
+  .about_rock{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    .heading5{
+      grid-column: 1/4;
+      grid-row: 1/1;  
+    }
+    .rock_site1{
+      grid-column: 1/1;
+      grid-row: 2/2;
+    }
+    .rock_site2{
+      grid-column: 2/2;
+      grid-row: 2/2;
+    }
+    .rock_site3{
+      grid-column: 3/3;
+      grid-row: 2/2;
+    }
+  }
+ }
+}
+
+// styling the Gallary Page
+  .gallary{
+    .camping{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+      grid-gap: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      .heading2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      .goudini{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .harmony{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .kogel{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+    }
+    .hiking{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      margin-top:100px;
+      .heading3{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      .lion{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .silvermine{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .newlands{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+    }
+    .fishing{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      margin-top:100px;
+      .heading4{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      .lakenvlei{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .berg_river{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .false_bay{
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      }
+    }
+    .rock{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+      grid-gap: 20px;
+      margin-top:100px;
+      .heading5{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+      }
+      .lions{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .paarl{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      }
+      .peers{
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      }
+    }
+
+  }
+  // styling the form
+  form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1,1fr);
+    center{
+      grid-row-start: 2;
+      grid-row-end: 2;
+      margin-top: 200px;
+    }
+  }

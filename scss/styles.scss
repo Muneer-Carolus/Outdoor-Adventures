@@ -1,0 +1,170 @@
+// importing font-size@import
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+// importing partials
+@import "partials/layout";
+@import "partials/responsive";
+// styling the body of my page
+
+// styling homepage:
+.top{
+  background-image: url("../images/header1.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;  
+  width: 100%;
+}
+// styling Gallary page
+.container_gallary{
+  background-color: #24272B;
+}
+
+// Styling contact page
+.contact_container{
+  background-image: url("../images/header.jpg");
+  background-position: center;
+  background-size: cover;
+  border:solid 5px black;
+  border-radius: 5px;
+}
+// styling navbar
+.navbar{
+  display: inline;
+  position: fixed;
+  // padding: 10px;
+  a{
+   font-family: 'Skranji', cursive;
+   font-size: 20px;
+   color: #36C170;
+   margin-left: 100px;
+   padding-left: 80px;
+   text-decoration: none;
+   &:hover{
+     color:black;
+   }
+  }
+}
+// styling headers & text of Page
+.heading2,.heading3,.heading4,.heading5{
+  background-image: url("../images/heading_background.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  border-top: black solid 20px;
+  border-bottom: black solid 20px;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Kavivanar', cursive;
+  margin-top: 0px;
+  box-shadow: 7px 10px 14px 6px black;
+  color: #BFAB25;
+  }
+  h2{
+    font-family: 'Skranji', cursive;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    &:hover{
+      box-shadow: 7px 10px 14px 6px black;
+      text-shadow: 5px 5px #4DAA22;
+    }
+  }
+  h3{
+    color: #4DAA22;
+    text-decoration:underline;
+    box-shadow: 7px 10px 14px 6px black;
+  }
+  h4{
+    text-decoration:underline;
+    font-family: 'Skranji', cursive;
+    font-size: 20px;
+  }
+  // styling the sidebar
+  .sidebar{
+    padding: 20px;
+    border: 2px black solid;
+    li{
+      padding: 10px;
+    }
+    a{
+      text-decoration: none;
+      color:black;
+      font-family: 'Skranji', cursive;
+      text-align: center;
+     &:hover{
+       font-size: 20px;
+       text-decoration: underline;
+       color: #4DAA22;
+       text-shadow: 2px 2px black;
+     }
+    } 
+  }
+  
+
+ // styling images
+ img{
+   border-radius: 20px;
+   padding: 10px;
+   &:hover {
+     transform: rotateY(150deg);
+     box-shadow: 7px 10px 14px 6px black;
+   }
+ }
+
+
+ // styling footer
+footer{
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+.comment{
+  border-radius: 10px;
+}
+// Styling The Dropdown Button
+.dropbtn {
+  background: transparent;
+  border: none;
+  overflow: hidden;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    color:  #36C170;
+    font-family: 'Skranji', cursive;
+    cursor: pointer;
+
+}
+
+// positioning of dropdown content
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+// Dropdown Content (Hidden by Default)
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+}
+
+// Links inside the dropdown
+.dropdown-content a {
+    color:  #BFAB25;
+    padding: 10px;
+    text-decoration: underline;
+    display: block;
+}
+
+// Change color of dropdown links on hover
+.dropdown-content a:hover {
+  background-color:  #36C170;
+}
+
+// Show the dropdown menu on hover
+.dropdown:hover .dropdown-content {
+    display: block;
+}
